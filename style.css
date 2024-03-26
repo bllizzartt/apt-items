@@ -33,7 +33,13 @@
 .contact-number {
     text-align: center;
     margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    display: table; /* Another approach to make the background wrap the content */
+    margin-left: auto; /* Centers the block horizontally */
+    margin-right: auto;
 }
+
 
 .entrance-wall {
     position: fixed;
@@ -70,3 +76,12 @@
     height: 100%; /* Ensure video covers full height */
     object-fit: cover; /* Ensure video covers the screen while maintaining aspect ratio */
 }
+
+/* @font-face {
+    font-family: 'YourFontName'; /* This is a name you define and will use to reference the font */
+    src: url('NIKEA.otf') format('opentype');
+}
+
+body {
+    font-family: 'YourFontName', sans-serif; /* Fallback to sans-serif if your font doesn't load */
+} */
