@@ -40,7 +40,6 @@
     margin-right: auto;
 }
 
-
 .entrance-wall {
     position: fixed;
     top: 0;
@@ -77,11 +76,14 @@
     object-fit: cover; /* Ensure video covers the screen while maintaining aspect ratio */
 }
 
-/* @font-face {
-    font-family: 'YourFontName'; /* This is a name you define and will use to reference the font */
-    src: url('NIKEA.otf') format('opentype');
+@media screen and (max-width: 480px) {
+    /* Adjust styles for small screens (like iPhones) */
+    .container {
+        flex-direction: column;
+    }
+    .product {
+        width: 100%; /* Make product boxes full width */
+        margin: 5px 0; /* Adjust margins for small screens */
+    }
+    /* Add more responsive styles as needed */
 }
-
-body {
-    font-family: 'YourFontName', sans-serif; /* Fallback to sans-serif if your font doesn't load */
-} */
