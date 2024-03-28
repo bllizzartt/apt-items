@@ -77,13 +77,20 @@
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjust styles for small screens (like iPhones) */
     .container {
-        flex-direction: column;
+        justify-content: space-between; /* Adjust spacing between product items */
     }
     .product {
-        width: 100%; /* Make product boxes full width */
-        margin: 5px 0; /* Adjust margins for small screens */
+        width: 48%; /* Allow two products per row instead of full width */
+        margin: 1%; /* Adjust margins to fit the screen */
     }
-    /* Add more responsive styles as needed */
+    /* Ensure text and images within products are scaled appropriately */
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+    .product-info, .product-price {
+        font-size: smaller; /* Adjust text size if necessary */
+    }
 }
+
